@@ -1,0 +1,18 @@
+{
+    "name": "ニコメント欄表示切り替え",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "コメント欄の表示・非表示を切り替えるボタンを実装します",
+    "icons": {
+        "16": "16.png",
+        "48": "48.png",
+        "128": "128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.nicovideo.jp/*"],
+            "css":["style.css"],
+            "js":["jquery-3.6.0.min.js","main.js"]
+        }
+    ]
+}
