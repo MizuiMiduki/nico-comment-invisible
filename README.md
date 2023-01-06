@@ -14,4 +14,4 @@ Firefox : https://addons.mozilla.org/ja/firefox/addon/%E3%83%8B%E3%82%B3%E3%83%A
 ***
 
 # 更新履歴
-R1.0 : ファーストリリース。  
+Releaseに詳細を書いているのでそちらを確認してください。
