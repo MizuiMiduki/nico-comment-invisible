@@ -5,3 +5,13 @@ Chrome・Firefoxで配布中のニコニコ動画のプレイヤー横コメン�
 本拡張機能はMITライセンスで配布します。  
 同梱しているJqureryはMITライセンスのもとに再配布しています。  
 /*! jQuery v3.6.0 | (c) OpenJS Foundation and other contributors | jquery.org/license */
+***
+
+# 配布ページ
+各ブラウザへの追加は下記のリンクから行ってください。
+
+準備中
+***
+
+# 更新履歴
+R1.0 : ファーストリリース。  
