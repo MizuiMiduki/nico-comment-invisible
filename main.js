@@ -128,7 +128,7 @@ $(function () {
     //ESCAPEキーで全画面終了したときの処理
     document.addEventListener('keydown', comments_enable_ex_FD, false);
     function comments_enable_ex_FD(event) {
-        if (event.code === "Escape" || event.keyCode === 70) {
+        if (event.code === "Escape") {
 
             //コメ欄表示時
             if ($('.MainContainer-player-disable-full').length) {
@@ -165,7 +165,7 @@ $(function () {
     //Fキーで全画面終了したときの処理
     document.addEventListener('keydown', comments_enable_ex_FD, false);
     function comments_enable_ex_FD(event) {
-        if (event.keyCode === 70) {
+        if (event.key === 'f' || event.key === 'F') {
 
             //コメ欄表示時
             if ($('.MainContainer-player-disable-full').length) {
