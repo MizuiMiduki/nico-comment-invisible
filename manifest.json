@@ -1,7 +1,7 @@
 {
     "name": "ニコメント欄表示切り替え",
     "version": "3.3",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "description": "コメント欄の表示・非表示を切り替えるボタンを実装します",
     "icons": {
         "16": "16.png",
