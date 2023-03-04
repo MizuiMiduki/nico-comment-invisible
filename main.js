@@ -3,6 +3,8 @@ $(function () {
     chrome.storage.local.get(["comment_invisible_mode"], function (pattern) {
         var select_mode = pattern.comment_invisible_mode;
 
+        $('.ControllerContainer-area').eq(2).addClass('ControllerContainer-area-right');
+
         //動画の裏にある背景を#252525に変更
         $('.VideoContainer').css('background-color', '#252525');
         $('.PlayerContainer').css('background-color', '#252525');
@@ -205,10 +207,17 @@ $(function () {
         }
     };
 
+
+    var obj = document.getElementsByClassName("VideoPlayer");
+    obj.id = "VideoPlayer";
+    
     //画面回転クリック1回目の挙動
-    $(document).on("click", "#movie_rotate_ex", function () {
+    $(document).on("click", "#movie_rotate_ex", function () {       
         //画面を90°回転し、サイズを16:9ベースで調整
         $('.VideoPlayer').css('transform', 'rotate(90deg) scale(56.25%)');
+
+        var obj = document.getElementById("VideoPlayer");
+        obj.id = "VideoPlayer_2";
         //次の挙動のためにIDを変更
         var obj = document.getElementById("movie_rotate_ex");
         obj.id = "movie_rotate_ex_2";
@@ -217,6 +226,9 @@ $(function () {
     $(document).on("click", "#movie_rotate_ex_2", function () {
         //画面を180°回転
         $('.VideoPlayer').css('transform', 'rotate(180deg)');
+
+        var obj = document.getElementById("VideoPlayer_2");
+        obj.id = "VideoPlayer_3";
         //次の挙動のためにIDを変更
         var obj = document.getElementById("movie_rotate_ex_2");
         obj.id = "movie_rotate_ex_3";
@@ -225,6 +237,9 @@ $(function () {
     $(document).on("click", "#movie_rotate_ex_3", function () {
         //画面を270°回転し、サイズを16:9ベースで調整
         $('.VideoPlayer').css('transform', 'rotate(270deg) scale(56.25%)');
+
+        var obj = document.getElementById("VideoPlayer_3");
+        obj.id = "VideoPlayer_4";
         //次の挙動のためにIDを変更
         var obj = document.getElementById("movie_rotate_ex_3");
         obj.id = "movie_rotate_ex_4";
@@ -233,6 +248,8 @@ $(function () {
     $(document).on("click", "#movie_rotate_ex_4", function () {
         //画面回転を解除
         $('.VideoPlayer').css('transform', '');
+        var obj = document.getElementById("VideoPlayer_4");
+        obj.id = "VideoPlayer";
         //次の挙動のためにIDを変更
         var obj = document.getElementById("movie_rotate_ex_4");
         obj.id = "movie_rotate_ex";
