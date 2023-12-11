@@ -1,4 +1,6 @@
 $(function () {
+    $('.common-header-1o7v8vg').after('<div style="color:white!important;"><p>お使いのブラウザ拡張機能"ニコメント欄表示切り替え"は2023/12/31をもってサポートされなくなります。後継の"<a href="https://github.com/MizuiMiduki/nicominabe" style="text-decoration:underline; color:white;">ニコ見なべ</a>"をご利用ください</p></div>');
+
     //chrome.storage APIを呼び出し、取得した現在のモードを'select_mode'に格納
     chrome.storage.local.get(["comment_invisible_mode"], function (pattern) {
         var select_mode = pattern.comment_invisible_mode;
